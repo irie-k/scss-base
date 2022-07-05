@@ -9,10 +9,14 @@
 // 3. All the boilerplate code for the project
 @use 'base' as b;
 
-// 4. Everything that takes part in laying out the site or application (Layout)
+// 4. Everything that takes part in laying out the site or application
+@use 'layout' as l;
 
-// 5. all kind of specific modules (Components)
+// 5. all kind of specific modules
+@use 'components' as c;
 
-// 6. Page-specific styles (Pages)
+// 6. Page-specific styles
+@use 'pages' as p;
 
-// 7. Themes for large sites/applications (Themes)
+// 7. Themes for large sites/applications
+@use 'themes' as t;
