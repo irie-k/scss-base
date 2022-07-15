@@ -14,12 +14,12 @@
     "watch:js": "onchange \"src/js/**/*\" -- npm run copy:js",
     "watch:pages": "onchange \"src/pages/**/*\" -- npm run copy:pages",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
-    "watch:sass": "sass  --no-source-map --watch src/sass:dist/css",
+    "watch:sass": "sass  --no-source-map --watch src/scss:dist/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server dist --files dist",
     "start": "npm-run-all copy --parallel watch serve",
-    "prebuild": "sass --no-source-map src/sass:dist/css",
-    "build": "copyfiles -u 1 -e \"src/sass/**/*\" \"src/**/*\" dist",
+    "prebuild": "sass --no-source-map src/scss:dist/css",
+    "build": "copyfiles -u 1 -e \"src/scss/**/*\" \"src/**/*\" dist",
     "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
